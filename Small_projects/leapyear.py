@@ -1,11 +1,15 @@
+def leap_year(p_year):
+    
+    if p_year % 4 == 0:
+        if p_year % 100 == 0:
+             if p_year % 400 == 0:
+                 return "Leap year."
+             else:  
+                 return "Not Leap year."
+        else:    
+           return "Leap year."
+    else:
+       return "Not a leap year."
+
 year = int(input("Enter a year: "))
-if year % 4 == 0:
-   if year % 100 == 0:
-     if year % 400 == 0:
-         print("Leap year.")
-     else:  
-         print("Not Leap year.")
-   else:    
-       print("Leap year.")
-else:
-  print("Not a leap year.")
+print(leap_year(year))
