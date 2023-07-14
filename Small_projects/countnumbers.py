@@ -20,3 +20,32 @@ def check_numbers():
             
 
 check_numbers()
+
+#version 2
+
+def check_for_float(p_input):
+    try:
+        val = float(p_input)
+        return val
+    except (ValueError, TypeError):
+        print("Error, please enter numeric input")
+        return False
+        
+empty_list = list()
+
+while True:
+    input_number = input("Enter a number: ")
+    if input_number == "done":
+        break
+    
+    number = check_for_float(input_number)
+    
+    
+    if not number:
+        continue
+    
+    empty_list.append(number)
+    max_value = max(empty_list)
+    min_value = min(empty_list)
+    
+print(f"Maximum number: {max_value}, Minimum number: {min_value}")
