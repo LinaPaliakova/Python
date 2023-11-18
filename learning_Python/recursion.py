@@ -116,6 +116,28 @@ def geometric_sum(n):
   else:
     return 1 / pow(2,n) + geometric_sum(n - 1)
 
+Write a recursive function that accepts a decimal integer and display its binary equivalent.
+def find( decimal_number ):
+    if decimal_number == 0:
+        return 0
+    else:
+        return (decimal_number % 2 + 10 *
+                find(int(decimal_number // 2)))
+ 
+# Driver Code
+decimal_number = 10
+print(find(decimal_number))
+
+sum of natural numbers       
+def sum_of_natural(n):
+    
+    if n == 0:
+        return 0
+    else:
+       return n + sum_of_natural(n-1)
+
+print(sum_of_natural(10))   
+
       
 
 
