@@ -84,6 +84,42 @@ def power(a, b):
        else:
            return a *(power(a,b - 1))
 
+2. Write a Python program to convert an integer to a string in any base.
+
+def convert_to_string(n, base):
+       
+      string="0123456789ABCDEF"
+      if n < base:
+          return string[n]
+      else:
+          return convert_to_string(n // base, base) + string[n % base]
+
+def harmonic_sum(n):
+  
+  if n < 2:
+    return 1
+  else:
+    return 1 /n + harmonic_sum(n - 1)
+
+print(harmonic_sum(7))            
+            
+def common_divisioner(a, b) :
+    if  b == 0:
+        return a
+    else:
+        return common_divisioner(b, a % b)
+
+def geometric_sum(n):
+  
+  if n < 0:
+    return 0
+  else:
+    return 1 / pow(2,n) + geometric_sum(n - 1)
+
+      
+
+
+
 
 
 
