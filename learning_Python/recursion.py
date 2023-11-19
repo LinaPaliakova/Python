@@ -122,7 +122,7 @@ def find( decimal_number ):
         return 0
     else:
         return (decimal_number % 2 + 10 *
-                find(int(decimal_number // 2)))
+                find(decimal_number // 2)
  
 # Driver Code
 decimal_number = 10
