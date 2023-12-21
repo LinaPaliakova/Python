@@ -9,4 +9,5 @@ Hangman game
 PigLatin translator
 Music app
 Powerball game
-3.  In the learning folder you can find small scripts aimed to practise usage of different Python structures and concepts.
+2.  In the learning folder you can find small scripts aimed to practise usage of different Python structures and concepts.
+3.  Separately you can find passwordchecker and email and phonescrapper projects.
